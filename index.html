@@ -17,29 +17,33 @@
         <meta charset="UTF-8">
   </head>
 
-  <body>
+  <body style="background: black;">
 
-    <!-- <nav>
+    <nav class= "z-depth-0">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Pylar</a>
+          <a href="#!" class="brand-logo hide-on-med-and-down center" style="font-size:50px">Pylar</a>
+          <a href="#!" class="brand-logo sidenav-trigger" data-target="mobile-demo" class="sidenav-trigger"><i><img src="logo-icon.png" style="height: 100%"></i>Pylar</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="sass.html" class="left">Docs</a></li>
+            <li><a href="badges.html">About</a></li>
+            <li><a href="collapsible.html">Contact</a></li>
+            
+          </ul>
+          <ul class="right  hide-on-med-and-down">
+            <li><a class="waves-effect waves-light btn" >Login/Sign Up</a></li>
           </ul>
         </div>
       </nav>
     
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul> -->
+        <li><a href="sass.html">Docs</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="collapsible.html">Contact</a></li>
+        <li><a class="waves-effect waves-light btn">Button</a></li>
+      </ul>
 
-    <div class="parallax-container">
+    <!-- <div class="parallax-container">
         <div class="parallax"><img src="/EDB.jpg"></div>
       </div>
       <div class="section white">
@@ -51,15 +55,11 @@
       <div class="parallax-container">
         <div class="parallax"><img src="file:///home/alex/pylar.io/CreepDetector.png"></div>
       </div>
-          
+           -->
     <script>
          document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
-
-    .parallax{
-  position:static;
-}
   });
 
     </script>
