@@ -3,6 +3,7 @@
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href = "style.css" rel = "stylesheet" type= "text/css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
@@ -14,20 +15,21 @@
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
         <meta charset="UTF-8">
   </head>
 
-  <body style="background: black;">
+  <body class = "test">
 
     <nav class= "z-depth-0" style="background-color: transparent;">
         <div class="nav-wrapper"  >
-          <a href="#!" class="brand-logo" style="font-size:50px; font-family: monospace;">Pylar</a>
+          <a href="#!" class="brand-logo" style="font-size:50px; font-family: monospace;"><img src = "pylar.png" style="padding: 15px; "></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="sass.html" class="left">Docs</a></li>
             <li><a href="badges.html">About</a></li>
-            <li><a href="collapsible.html">Contact</a></li>
-            <li><a class="waves-effect waves-light btn" >Login/Sign Up</a></li>
+            <li><a href="collapsible.html"></a></li>
+            <li><a class="waves-effect waves-light btn" href="user.html">Login/Sign Up</a></li>
           </ul>
         </div>
       </nav>
@@ -35,8 +37,8 @@
       <ul class="sidenav" id="mobile-demo">
         <li><a href="sass.html">Docs</a></li>
         <li><a href="badges.html">About</a></li>
-        <li><a href="collapsible.html">Contact</a></li>
-        <li><a class="waves-effect waves-light btn">Log In / Sign Up</a></li>
+        <li><a href="collapsible.html">Team</a></li>
+        <li><a>Log In / Sign Up</a></li>
       </ul>
 
     <script>
@@ -45,11 +47,11 @@
         var instances = M.Sidenav.init(elems, {});
       });
     </script>
-      <div >    
-    <h1 class="black">Pylar Composting</h1>
-    <p>Pylar is a smart composting solution that aims to solve problems.  This is a test.</p>
+      <div class="centered">    
+    <h1>Pylar Composting</h1>
+    <p>A smart IOT composting solution that uses AI to make smart predictions and help users manage compost efficiently.</p>
+    <a class="waves-effect waves-light btn-large">get started</a>
   </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
