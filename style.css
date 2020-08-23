@@ -1,22 +1,27 @@
-html {
-    width: 100%;
-    height: 100%;
-}
-body {
-    width: 100%;
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    font-family: 'Karla', sans-serif;
 }
 
-.test {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    background: url("tester3.jpg");
+.home {
+    height: 100vh;
+    background: url("img/wallpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
-    background-color: #685f5f;
+    background-color: #9c9c9c;
 }
+
+
+
+.logo-home {
+    max-width: 200px;
+}
+
+/* .navbar {
+    margin: 0 10px;
+} */
 
 .centered {
     top: 50%;
@@ -24,6 +29,10 @@ body {
     transform: translateY(-50%);
     position: absolute;
     width: 100%;
-    text-align: center;
-    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .logo-home {
+        max-width: 150px;
+    }
 }
