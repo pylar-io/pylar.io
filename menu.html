@@ -1,36 +1,40 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top container">
-    <a class="navbar-brand mr-3" href="index.php">Pylar.io</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mr-auto">
-        <a class="nav-link" href="docs.html">Docs</a>
-        <a class="nav-link" href="about.php">About</a>
-        <a class="nav-link" href="#">Buy</a>
-      </div>
-      <div class="navbar-nav ml-auto">
-        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter">
-          Sign Up / Log In
+  <a class="navbar-brand mr-3" href="index.php">pylar.io</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-link disabled" href="docs.php">Docs</a>
+      <a class="nav-link disabled" href="about.php">About</a>
+      <a class="nav-link disabled" href="buy.php">Buy</a>
+    </div>
+    <div class="navbar-nav ml-auto">
+      <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModalCenter"> <!-- add hidden class when signed in -->
+        Sign Up / Log In
+      </button>
+
+      <div class="btn-group hidden">  <!-- remove hidden class when signed in -->
+        <button id="user-btn" type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          alexlynd <!-- set id "user-btn" to username here-->
         </button>
-        <div class="btn-group">
-          <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Alex Lynd
-          </button>
-          
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">My Dashboard</button>
-            <button class="dropdown-item" type="button">My Settings</button>
-            <button class="dropdown-item" type="button">Log Out</button>
-          </div>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" type="button" href="/dashboard/index.php">My Dashboard</a>
+          <a class="dropdown-item" type="button" href="/settings.php">My Settings</a>
+          <button class="dropdown-item" type="button">Log Out</button>
         </div>
       </div>
-    </div>
-  </nav>
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content text-dark">
-  <!--           
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-dark">
+      <!--           
           <div class="modal-header text-dark">
           
               <div class="nav nav-pills" id="nav-tab" role="tablist">
@@ -43,69 +47,78 @@
             </button>
             
           </div> -->
-        <div class="modal-body">
-          <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="login" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" onclick="run()">Log In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="signup" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" onclick="run()">Sign Up</a>
-            </li>
-          </ul>
-         
-       <form class="mb-4">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">First Name</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="login" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true" onclick="run()">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="signup" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false" onclick="run()">Sign Up</a>
+          </li>
+        </ul>
+
+        <form class="mb-4">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Last Name</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Last Name</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted" hidden>We'll never share your email with anyone
+              else.</small>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted" hidden>We'll never share your email with anyone else.</small>
-      </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Username</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
-            <small id="emailHelp" class="form-text text-muted" hidden>We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Password</label>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Username">
+            <small id="emailHelp" class="form-text text-muted" hidden>We'll never share your email with anyone
+              else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+        </form>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><button
+              type="button" class="btn btn-outline-dark btn-block">Log In</button>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><button type="button"
+              class="btn btn-outline-dark btn-block">Sign Up</button>
+          </div>
         </div>
-      </form>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><button type="button" class="btn btn-outline-dark btn-block">Log In</button>
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><button type="button" class="btn btn-outline-dark btn-block">Sign Up</button>
-        </div>
-        </div>
-        
-       </div>
-        <div class="modal-footer">
-          <a href="ff">I forgot my username / password</a>
-         
-       
-          
-        </div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="ff">I forgot my username / password</a>
+
+
+
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script>
-    function run () {
-      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+  function run() {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       if ($(e.target).attr('id') == "login") {
-        
+
       }
       else {
 
       }
-      });
-    }
-  </script>
+    });
+  }
+</script>

@@ -12,8 +12,6 @@
     background-color: #9c9c9c;
 }
 
-
-
 .logo-home {
     max-width: 200px;
 }
@@ -41,12 +39,13 @@
 }
 
 .btn-outline-success {
-    color: #59C9A5 ;
-    border-color: #59C9A5 ;
+    color: #59C9A5;
+    border-color: #59C9A5;
 }
+
 .btn-outline-success:hover {
-    background-color: #59C9A5 ;
-    border-color: #59C9A5 ;
+    background-color: #59C9A5;
+    border-color: #59C9A5;
 }
 
 h1 {
@@ -57,3 +56,12 @@ p {
     color: #d3d3d3;
 }
 
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .title-home {
+        font-size: calc(1.5rem + 1vw);
+    }
+}

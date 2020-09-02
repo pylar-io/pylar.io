@@ -14,11 +14,11 @@
   <body class="text-white">
     <?php include "menu.html";?>
       <div class="home container-fluid">
-        <div class="h-100">
+        <div class="h-100 container-fluid">
           <div class="row align-items-center h-100">
               <div class="mx-auto text-center">
                 <img src="img/logo.svg" class = "logo-home mb-4">
-                  <h1>Pylar Composting</h1>
+                  <h1 class="title-home">Pylar Composting</h1>
                  <span class="d-inline-block text-wrap" style="max-width: 400px;">
                   A smart composting solution in an easy DIY kit to empower every day consumers with a proactive solution to organic waste management.
                   </span>
