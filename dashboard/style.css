@@ -13,7 +13,9 @@
 .bg-dark-secondary {
     background-color: #151E28;
 }
-
+.bg-dark-tertiary {
+    background-color: #1C2835;
+}
 .icon {
   --size: 35px;
   display: inline-block;
@@ -34,4 +36,33 @@
 
 .fa-2x {
     font-size: 2px;
+}
+
+
+.centered {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    left: 0; /* chart js*/
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    opacity: 70%;
+}
+
+.test {
+    position: relative;
+}
+
+.card-max {
+    height: 100%;
 }
