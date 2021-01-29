@@ -35,17 +35,13 @@
 }
 
 .bg-dark {
-    background-color: #1f2d3d !important;
+    background-color: #0E141B !important;
 }
-
-.btn-outline-success {
-    color: #59C9A5;
-    border-color: #59C9A5;
+.bg-dark-secondary {
+    background-color: #151E28;
 }
-
-.btn-outline-success:hover {
-    background-color: #59C9A5;
-    border-color: #59C9A5;
+.bg-dark-tertiary {
+    background-color: #1C2835;
 }
 
 h1 {

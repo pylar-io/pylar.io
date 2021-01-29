@@ -68,7 +68,7 @@
             </div>
           </div>
 
-          <h3 class= "font-weight-bold mb-0 mt-5">Trend</h3>
+          <h3 class= "font-weight-bold mb-0 mt-5">Temperature Trend</h3>
           <p class="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere illum aspernatur obcaecati, excepturi culpa necessitatibus inventore temporibus provident similique nemo dolorum amet soluta neque quisquam distinctio magnam iure consectetur.</p>
         </div>
       </div>
@@ -77,12 +77,12 @@
           <h3 class= "font-weight-bold">Actions</h3>
           <div class="card bg-dark-tertiary mt-3">
             <div class="card-body">
-              <i class="fas fa-leaf"></i> &nbsp;&nbsp;Compost wet as hell, add more browns.
+              <i class="fas fa-leaf"></i> &nbsp;&nbsp;Compost wet, add more browns.
             </div>
           </div>
           <div class="card bg-dark-tertiary mt-3">
             <div class="card-body">
-              <i class="fas fa-water"></i> &nbsp;&nbsp;You forgot to add water you dimmadumbass!
+              <i class="fas fa-water"></i> &nbsp;&nbsp;You forgot to add water you idiot!
             </div>
           </div>
         </div>
